@@ -1,0 +1,268 @@
+body {
+    font-family: 'Karla', sans-serif;
+    /* background-image: url("../images/bg.svg"); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #ffffff;
+    background-color: #000000;
+    padding-bottom: 75px;
+}
+
+@media (min-width: 768px) {
+    body {
+        padding-bottom: 110px;
+    }
+}
+
+.text-drie {
+    color: #E90063;
+}
+
+.navbar-brand {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.navbar-brand img {
+    height: 4rem;
+    width: auto;
+}
+
+.navbar-dark {
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+.navbar-dark .navbar-text {
+    color: #ffffff;
+    opacity: 1;
+    padding: 0 20px;
+    border-right: 1px solid #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.navbar-dark .navbar-text:last-child {
+    border-right: 0;
+}
+
+@media (max-width: 767px) {
+    .navbar-dark {
+        padding-bottom: 0;
+    }
+}
+
+.page-title {
+    font-size: 5rem;
+    font-weight: semi-bold;
+    margin-bottom: 6px;
+}
+
+@media (max-width: 767px) {
+    .page-title {
+        font-size: 2.5rem;
+        margin-bottom: 14px;
+    }
+}
+
+.page-description {
+    max-width: 465px;
+    font-size: 18px;
+    margin-bottom: 59px;
+}
+
+@media (max-width: 767px) {
+    .page-description {
+        font-size: 14px;
+    }
+}
+
+p {
+    font-size: 14px;
+    margin-bottom: 21px;
+    position: relative;
+}
+
+.footer-social-links .social-link {
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    line-height: 40px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    color: #000000;
+    margin-right: 16px;
+    transition: all 0.3s ease-in-out;
+}
+
+.footer-social-links .social-link:last-child {
+    margin-right: 0;
+}
+
+.footer-social-links .social-link:hover {
+    text-decoration: none;
+    background-color: #E90063;
+    color: #ffffff;
+}
+
+
+/*# sourceMappingURL=bd-coming-soon.css.map */
+
+.btn {
+    margin-top: 35px;
+    margin-left: 0px;
+    margin-right: 10px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+
+/* Boostrap Buttons Styling */
+
+.btn-default {
+    font-family: 'Karla', sans-serif;
+    font-size: 20px;
+    position: relative;
+    z-index: 1;
+    color: #ffffff;
+    letter-spacing: 2px;
+    line-height: 22px;
+    outline: 2px solid #000000;
+    border-radius: 120px;
+    background: #E90063;
+    transition: all 0.3s ease 0s;
+}
+
+@media (max-width: 767px) {
+    .btn-default {
+        font-size: 1rem;
+        line-height: 20px;
+    }
+}
+
+.btn-default:hover {
+    color: #ffffff;
+    background: transparent;
+    outline: 2px solid #E90063;
+}
+
+.btn-slide {
+    font-family: 'Karla', sans-serif;
+    font-size: 20px;
+    position: relative;
+    z-index: 1;
+    color: #E90063;
+    letter-spacing: 2px;
+    line-height: 22px;
+    outline: 2px solid transparent;
+    border-radius: 120px;
+    /* background: transparent; */
+    background: #000000;
+    background-color: #000000;
+    transition: all 0.3s ease 0s;
+}
+
+@media (max-width: 767px) {
+    .btn-slide {
+        font-size: 1rem;
+        line-height: 20px;
+    }
+}
+
+.btn-slide:hover {
+    color: #E90063;
+    /* background: transparent; */
+    background: #000000;
+    background-color: #000000;
+    outline: 2px solid #ffffff;
+}
+
+
+/* .btn-slide:hover {
+  color: #FFF;
+  background: #E90063;
+  border: 2px solid #E90063;
+} */
+
+footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    margin-top: 0px;
+}
+
+
+/* footer div {
+  background-color:#4478e3;
+  margin: 0px 0px 0px 0px;
+  padding:0px;
+  color: #fff;
+  text-align:center;
+} */
+
+svg {
+    width: 100%;
+    z-index: -1;
+    height: auto;
+}
+
+.wave {
+    animation: wave 3s linear;
+    animation-iteration-count: infinite;
+    fill: #FF3289;
+    opacity: .6
+}
+
+
+/*#FF3289  */
+
+#wave2 {
+    animation-duration: 5s;
+    animation-direction: reverse;
+    fill: #DB26D8;
+    opacity: .6
+}
+
+#wave3 {
+    animation-duration: 7s;
+    opacity: .9;
+    fill: #AC12D5;
+}
+
+#wave0 {
+    animation-duration: 10s;
+    animation-direction: reverse;
+    fill: #FF3289;
+    opacity: .9
+}
+
+@keyframes wave {
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.gradient-text {
+    background: #FF3289;
+    background: -webkit-linear-gradient(to right, #FF3289 0%, #DB26D8 100%);
+    background: -moz-linear-gradient(to right, #FF3289 0%, #DB26D8 100%);
+    background: linear-gradient(to right, #FF3289 0%, #DB26D8 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+    text-decoration: none;
+    color: inherit;
+}

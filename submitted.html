@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="assets/css/home_page.css">
     <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.3.2/angular.min.js'></script>
 
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-P2FN5FEPGE"></script>
     <script>
@@ -33,17 +34,10 @@
         }
     </style>
 
-    <style>
-        body {
-            -webkit-appearance: none;
-            appearance: none;
-            -moz-appearance: none;
-        }
-    </style>
 
 </head>
 
-<body class="min-vh-100 d-flex flex-column" style="overflow: hidden;">
+<body class="min-vh-100 d-flex flex-column">
 
     <header>
         <div class="container px-0">
@@ -62,8 +56,16 @@
               <img src="assets/images/graphic.svg" style="height:25vh" class="mb-5 mx-lg-0 mx-auto" alt="">
             </div> -->
 
-                <h1 class="page-title mb-0">Designing <br class="d-md-none"><span id="typedTitle2" class="page-title gradient-text"></span></h1>
-                <h1 class="page-title"> for the next generation.</h1>
+                <h2 class="display-1 text-white mt-0 mb-3 show-on-scroll" data-show-duration="1000" data-show-distance="10" data-show-origin="top">Submitted!</h2>
+
+                <!-- *** version 1 -->
+                <!-- <h4 class="display-6 show-on-scroll" data-show-delay="850" data-show-duration="1000" data-show-distance="10" style="color: #E90063;">We will reach out shortly.</h4> -->
+
+                <!-- *** version 2 -->
+                <!-- <h4><span class="h4" style="color: #E90063;" id="typedTitle2"></span></h4> -->
+
+                <!-- *** version 3 -->
+                <div><span class="h1" style="color: #E90063;" id="typedText"></span></div>
                 <!-- @Alanna add for animated text-->
                 <br>
                 <br>
@@ -72,19 +74,7 @@
                     <a href="https://twitter.com/DrieDesign" target="_blank" class="social-link"><i class="mdi mdi-twitter"></i></a>
                     <a href="https://github.com/DrieDesign" target="_blank" class="social-link"><i class="mdi mdi-github-circle"></i></a>
                     <a href="https://www.linkedin.com/company/driedesign/" target="_blank" class="social-link"><i class="mdi mdi-linkedin-box"></i></a>
-                    <a href="mailto:info@drie.design" class="social-link"><i class="mdi mdi-email"></i></a>
                 </nav>
-
-                <div ng-app>
-
-                    <button type="button" class="btn btn-default" id="toggleMessage" ng-click="toggle=!toggle">
-                      {{toggle ? 'Menu' : 'Menu'}}
-                    </button>
-                    <a type="button" class="btn btn-slide" id="About" ng-show="toggle" href="about.html">About</a>
-                    <a type="button" class="btn btn-slide" id="Process" ng-show="toggle" href="process.html">Process</a>
-                    <a type="button" class="btn btn-slide" id="Projects" ng-show="toggle" href="projects.html">Projects</a>
-                    <a type="button" class="btn btn-slide" id="Contact" ng-show="toggle" href="contact.html">Contact</a>
-                </div>
 
             </div>
         </main>
@@ -102,20 +92,15 @@
         </svg>
     </footer>
 
-    <!-- Typed text (animated typing effect)-->
-    <script src="assets/js/typed.min.js"></script>
-    <script>
-        var typed = new Typed('#typedTitle2', {
-            strings: ["sites", "apps", "logos", "brands", "experiences"],
-            loop: true,
-            showCursor: true,
-            cursorChar: "&nbsp",
-            backSpeed: 30,
-            typeSpeed: 55,
-            backDelay: 900,
-            //startDelay: 800,
+    <script src="https://unpkg.com/typeit@8.4.0/dist/index.umd.js"></script>
 
-        });
+    <script>
+        new TypeIt("#typedText", {
+            strings: "We will reach out shortly.",
+            startDelay: 1000,
+            speed: 65,
+            loop: false,
+        }).go();
     </script>
 
     <!-- ScrollMonitor (manages events for elements scrolling in and out of view) -->
