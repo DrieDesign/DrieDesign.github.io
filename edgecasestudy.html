@@ -2,7 +2,8 @@
 <html lang="en">
 
 <head>
-<!-- Google tag (gtag.js) -->
+
+    <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-2Q18JWXNZL"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -14,7 +15,7 @@
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Drie Design | Edge Analytics </title>
+    <title>Drie Design | Process</title>
     <meta name="description" content="Drie Design">
     <meta name="author" content="DrieDesign">
     <link rel="icon" type="image/png" href="assets/images/Logo.png">
@@ -33,6 +34,7 @@
     <!-- END: Styles -->
     <!-- jQuery -->
     <script src="assets/vendor/jquery/dist/jquery.min.js"></script>
+    <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.3.2/angular.min.js'></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-P2FN5FEPGE"></script>
@@ -48,12 +50,12 @@
     </script>
 </head>
 
-<body class="bg-dark text-light">
+<body style="overflow: scroll; scrollbar-width: none; -ms-overflow-style: none;">
 
     <!-- start navbar -->
-    <header class="navbar navbar-dark navbar-top navbar-expand">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">
+    <header class="navbar navbar-dark bg-dark navbar-top navbar-expand">
+        <div class="container bg-dark">
+            <a class="navbar-brand pb-10" href="index.html">
                 <img class="pb-5" width="45" src="assets/images/Logo.png" alt=""> Drie Design
             </a>
             <a class="navbar-toggle" href="#navbar-mobile-style-3" data-fancybox data-base-class="fancybox-navbar" data-keyboard="false" data-auto-focus="false" data-touch="false" data-close-existing="true" data-small-btn="false" data-toolbar="false">
@@ -63,42 +65,42 @@
             </a>
             <ul class="nav navbar-nav navbar-nav-">
                 <li class="nav-item navbar-dropdown navbar-dropdown-mega ">
-                    <a href="index-1.html" class="nav-link">
+                    <a href="index.html" class="nav-link">
                         <span class="nav-link-name">home</span>
                         <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M1 9L5 5L1 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
                     </a>
-                </li>
+                    <div class="dropdown-menu">
+                        <div class="container">
 
-                <li class="nav-item navbar-dropdown active">
-                    <a href="projects.html" class="nav-link">
-                        <span class="nav-link-name">projects</span>
-                        <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                     <path d="M1 9L5 5L1 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                     </svg>
-                    </a>
-                </li>
-
-                <li class="nav-item navbar-dropdown">
-                    <a href="about.html" class="nav-link">
-                        <span class="nav-link-name">pages</span>
-                        <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <li class="nav-item navbar-dropdown active">
+                                <a href="projects.html" class="nav-link">
+                                    <span class="nav-link-name">projects</span>
+                                    <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M1 9L5 5L1 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
-                    </a>
-                </li>
+                                </a>
 
-                <li class="nav-item navbar-dropdown">
-                    <a href="contact.html" class="nav-link">
-                        <span class="nav-link-name">contact</span>
-                        <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <li class="nav-item navbar-dropdown">
+                                    <a href="about.html" class="nav-link">
+                                        <span class="nav-link-name">pages</span>
+                                        <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M1 9L5 5L1 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
-                    </a>
-                </li>
+                                    </a>
+
+                                    <li class="nav-item navbar-dropdown">
+                                        <a href="contact.html" class="nav-link">
+                                            <span class="nav-link-name">contact</span>
+                                            <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 9L5 5L1 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                                        </a>
+
+                                    </li>
             </ul>
-        </div>
+            </div>
     </header>
 
 
@@ -125,52 +127,50 @@
                                     <path d="M1 11L6 6L1 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                                 </svg>
                         </a>
-                    </li>
 
-                    <li class="nav-item navbar-collapse">
-                        <a href="process.html" class="nav-link collapsed" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="navbarCollapseProjects">
-                            <span class="nav-link-name">process</span>
-                            <svg class="collapse-icon" width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                       <path d="M1 11L6 6L1 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                   </svg>
-                        </a>
-                    </li>
+                        <li class="nav-item navbar-collapse">
+                            <a href="process.html" class="nav-link collapsed" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="navbarCollapseProjects">
+                                <span class="nav-link-name">process</span>
+                                <svg class="collapse-icon" width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 11L6 6L1 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                            </a>
+                        </li>
 
-                    <li class="nav-item navbar-collapse active">
-                        <a href="projects.html" class="nav-link collapsed" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="navbarCollapseProjects">
-                            <span class="nav-link-name">projects</span>
-                            <svg class="collapse-icon" width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <li class="nav-item navbar-collapse active">
+                            <a href="projects.html" class="nav-link collapsed" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="navbarCollapseProjects">
+                                <span class="nav-link-name">projects</span>
+                                <svg class="collapse-icon" width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M1 11L6 6L1 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                                 </svg>
-                        </a>
-                    </li>
+                            </a>
+                        </li>
 
-                    <li class="nav-item navbar-collapse">
-                        <a href="about.html" class="nav-link collapsed" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="navbarCollapsePages">
-                            <span class="nav-link-name">about us</span>
-                            <svg class="collapse-icon" width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <li class="nav-item navbar-collapse">
+                            <a href="about.html" class="nav-link collapsed" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="navbarCollapsePages">
+                                <span class="nav-link-name">about us</span>
+                                <svg class="collapse-icon" width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M1 11L6 6L1 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                                 </svg>
-                        </a>
-                    </li>
+                            </a>
+                        </li>
 
-                    <li class="nav-item navbar-collapse">
-                        <a href="contact.html" class="nav-link collapsed" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="navbarCollapsePages">
-                            <span class="nav-link-name">contact</span>
-                            <svg class="collapse-icon" width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <li class="nav-item navbar-collapse">
+                            <a href="contact.html" class="nav-link collapsed" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="navbarCollapsePages">
+                                <span class="nav-link-name">contact</span>
+                                <svg class="collapse-icon" width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                        <path d="M1 11L6 6L1 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                                    </svg>
-                        </a>
-                    </li>
+                            </a>
+                        </li>
                 </ul>
             </div>
             <div class="navbar-footer">
-                <ul class="list-group borderless mb-30">
-                    <li class="list-group-item"><a href="mailto:info@drie.design?subject=Let's%20start%20a%20project">info@drie.design</a></li>
+                <ul class="list-group borderless mb-20">
+                    <li class="list-group-item"><a href="mailto:info@drie.design?subject=Let's%20start%20a%20project!">info@drie.design</a></li>
                     <!-- <li class="list-group-item">Phone: <a href="callto:+1 202-358-0309">+1 202-358-0309</a></li> -->
                 </ul>
                 <ul class="nav nav-gap-sm navbar-nav nav-social align-items-center pt-3">
-
                     <li class="nav-item">
                         <a href="https://twitter.com/DrieDesign" class="nav-link" target="_blank">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
@@ -178,7 +178,6 @@
                               </svg>
                         </a>
                     </li>
-
                     <li class="nav-item">
                         <a href="https://github.com/DrieDesign" class="nav-link px-3" target="_blank">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
@@ -186,7 +185,6 @@
                               </svg>
                         </a>
                     </li>
-
                     <li class="nav-item">
                         <a href="https://www.linkedin.com/company/driedesign" class="nav-link" target="_blank">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
@@ -198,51 +196,8 @@
             </div>
         </div>
     </div>
-    <!-- end navbar -->
 
-
-
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="row my-auto gh-3 gv-3 align-items-center justify-content-center">
-
-                <div class="col-12 col-lg-6 show-on-scroll" data-show-delay="10" data-show-distance="20" data-show-duration="500" data-show-origin="top">
-                    <img class="w-100" src="assets/images/edgeAnalyticsMockup.jpg" alt="">
-                </div>
-                <div class="col-12 col-lg-5 show-on-scroll" data-show-delay="10" data-show-distance="20" data-show-duration="500" data-show-origin="top">
-                    <h4 class="mb-25 text-light">Edge Analytics </h4>
-                    <p class="mt-n2 mb-60"> Edge Analytics is a boutique data science consulting firm. We were responsible for the UI/UX design and development of the website.</p>
-                    <div class="row align-items-center gh-1 d-inline-flex mt-n10">
-
-                        <div class="col-auto">
-                            <a href="https://edgeanalytics.io" target="_blank" class="btn btn-with-ball btn-primary2 ">view site</a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <div class="page-navigation mt-60 show-on-scroll" data-show-delay="0" data-show-distance="0" data-show-duration="0" data-show-origin="bottom">
-                <a href="projects-borreylaw.html" class="btn btn-clean text-light"><svg class="icon-arrow icon-arrow-left" width='26' height='11' viewBox='0 0 26 11' fill='none' xmlns='http://www.w3.org/2000/svg'>
-                                <path d='M5.5 1L1 5.5L5.5 10' stroke=#fff stroke-width='1.3' stroke-linecap='round' stroke-linejoin='round' />
-                                <path d='M19 5.5H1' 
-                                stroke=#fff 
-                                stroke-width='1.3' stroke-linecap='round' stroke-linejoin='round' /></svg>prev<span class="d-none d-sm-inline"> project</span></a>
-                <a href="projects.html" class="btn btn-primary2 text-white btn-circle btn-xs">all</a>
-                <a href="projects-msdressage.html" class="btn btn-clean text-light">next<span class="d-none d-sm-inline"> project</span><svg class="icon-arrow icon-arrow-right" width='26' height='11' viewBox='0 0 26 11' fill='none' xmlns='http://www.w3.org/2000/svg'>
-                                <path d='M20.5 1L25 5.5L20.5 10' stroke='currentColor' stroke-width='1.3' stroke-linecap='round' stroke-linejoin='round' />
-                                <path d='M7 5.5H25' stroke='currentColor' stroke-width='1.3' stroke-linecap='round' stroke-linejoin='round' /></svg></a>
-            </div>
-        </div>
-    </div>
-    </div>
-    </div>
-
-
-
-
-
-
-    <!-- START: Scripts -->
+     <!-- START: Scripts -->
     <!-- Object Fit Polyfill -->
     <script src="assets/vendor/object-fit-images/dist/ofi.min.js"></script>
     <!-- Popper -->
@@ -275,6 +230,6 @@
     <!-- Themebau -->
     <script src="assets/js/themebau.min.js"></script>
     <!-- END: Scripts -->
-</body>
 
+</body>
 </html>

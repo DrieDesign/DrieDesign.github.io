@@ -7,3 +7,10 @@
     background-clip: text;
     -webkit-text-fill-color: transparent;
   }
+
+
+  .borreytext{
+    background: -webkit-linear-gradient(#855CDB, #5D82EA, #4499F3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
